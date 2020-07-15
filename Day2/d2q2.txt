@@ -1,0 +1,41 @@
+String Methods:
+	Method		Description
+
+1.	charAt()	Returns the character at the specified index (position)
+	Example : 	var car = "Ferrari";
+			console.log(car.charAt(2));
+			Output : r
+
+2.	charCodeAt()	Returns the Unicode of the character at the specified index
+	Example : 	console.log(car.charCodeAt(2));
+			Output : 114
+
+3.	concat()	Joins two or more strings, and returns a new joined strings
+	Example : 	var car1 = " 488 Pista";
+			console.log(car.concat(car1));
+			Output : Ferrari 488 Pista
+
+4.	endsWith()	Checks whether a string ends with specified string/characters
+	Example:	console.log(car.endsWith('i'));
+			Output: true
+
+Array Methods:
+
+	Method		Description
+
+1.	slice()		Selects a part of an array, and returns the new array
+	Example:	var cars = ["Ferrari", "Volvo", "BMW"];
+			console.log(cars.slice(1));
+			Output: ["Volvo", "BMW"]
+
+2.	includes()	Check if an array contains the specified element
+	Example:	console.log(cars.includes('Ferrari'));
+			Output: true
+
+3.	pop()		Removes the last element of an array, and returns that element
+	Example:	console.log(cars.pop());
+			Output: BMW	
+
+4.	push()	Adds new elements to the end of an array, and returns the new length
+	Example:	console.log(cars.push("Aston Martin"));
+			Output: 3
