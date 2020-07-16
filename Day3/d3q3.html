@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Marks grade</title>
+	</head>
+	<body>
+		<script>
+			var input1 = prompt("Enter marks");
+			var grade = '';
+			function getGrade(ip)
+			{
+				if(ip < 40)
+					return 'F';
+				else if (ip >= 40 && ip < 60)
+					return 'D';
+				else if (ip >= 60 && ip < 70)
+					return 'C';
+				else if (ip >= 70 && ip < 80)
+					return 'B';
+				else if (ip >= 80 && ip < 90)
+					return 'A';
+				else
+					return 'O';
+			}
+			var result = getGrade(input1);
+			console.log('Marks = ', input1, 'Grade = ', result);		
+		</script>
+	</body>
+</html>
