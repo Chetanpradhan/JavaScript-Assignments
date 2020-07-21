@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Odd Cubes</title>
+	</head>
+	<body>
+		<script>
+      var inputArray = [];
+      do {
+        var size = prompt('Enter size of the array');
+        if(size <= 0) {
+            console.log('Invalid size! Enter again');
+        }
+      } while (size <= 0);
+      for(var i = 0; i < size; i++) {
+		      inputArray[i] = prompt('Enter Element ' + (i + 1));
+      }
+	    let oddCubes = inputArray.filter(op => op % 2 != 0).map(op => op ** 3);
+      console.log(oddCubes);
+		</script>
+	</body>
+</html>
